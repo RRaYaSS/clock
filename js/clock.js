@@ -13,7 +13,7 @@
             let dd = now.getDate()
             let mm = now.getMonth()
             let yyyy = now.getFullYear()
-            let weekDay= now.getDay()
+            let weekDay= now.getDay()-1
 
             if (hours >= 6 && hours < 12){
                 
