@@ -3,7 +3,7 @@
         const segundos = document.getElementById('segundos')
         const fullTime = document.querySelector("div.date>span")
         const mouth = ["Janeiro","Fevereiro","Março","Abril","Maio","junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
-        const day = ["Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sabádo","Domingo"]
+        const day = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sabádo"]
 
         const relogio = setInterval(function time(){ 
             let now = new Date();
@@ -13,7 +13,7 @@
             let dd = now.getDate()
             let mm = now.getMonth()
             let yyyy = now.getFullYear()
-            let weekDay= now.getDay()-1
+            let weekDay= now.getDay()
 
             if (hours >= 6 && hours < 12){
                 
